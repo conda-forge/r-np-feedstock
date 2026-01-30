@@ -1,4 +1,4 @@
-{% set version = "0.60-18" %}
+{% set version = "0.60-19" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/np_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/np/np_{{ version }}.tar.gz
-  sha256: b21c54c1ac2cb2105087b8af012e0444b2a53b47965f42e776c094b85a7c2a9b
+  sha256: 433de4e2ecde0622d3db3663679d1cd5e3ada4d65edbe88bf8107a12de53f1a6
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,8 +49,8 @@ test:
 about:
   home: https://github.com/JeffreyRacine/R-Package-np
   license: GPL-3.0-only
-  summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC, <http://www.nserc-crsng.gc.ca>), the Social Sciences
-    and Humanities Research Council of Canada (SSHRC, <http://www.sshrc-crsh.gc.ca>), and the Shared Hierarchical Academic Research Computing Network (SHARCNET, <http://www.sharcnet.ca>).
+  summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC, <http://www.nserc-crsng.gc.ca>), the Social 
+    Sciences and Humanities Research Council of Canada (SSHRC, <http://www.sshrc-crsh.gc.ca>), and the Shared Hierarchical Academic Research Computing Network (SHARCNET, <http://www.sharcnet.ca>).
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
