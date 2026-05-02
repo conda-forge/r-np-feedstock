@@ -1,4 +1,4 @@
-{% set version = "0.60-20" %}
+{% set version = "0.70-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/np_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/np/np_{{ version }}.tar.gz
-  sha256: ad8fb7d4d67d02e0356bd2a3eb683b2b76d814fc006b61ee0b7373f58eb9b1cb
+  sha256: 3cc87870c4a62e4763cede424b57a7af2848a878962301b0842258ca89c07601
 
 build:
   number: 0
