@@ -9,7 +9,7 @@ About r-np
 
 Home: https://github.com/JeffreyRacine/R-Package-np
 
-Package license: GPL-3.0-only
+Package license: GPL-2.0-or-later
 
 Summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC, <http://www.nserc-crsng.gc.ca>), the Social Sciences and Humanities Research Council of Canada (SSHRC, <http://www.sshrc-crsh.gc.ca>), and the Shared Hierarchical Academic Research Computing Network (SHARCNET, <http://www.sharcnet.ca>).
 
@@ -18,7 +18,7 @@ About r-np
 
 Home: https://github.com/JeffreyRacine/R-Package-np
 
-Package license: GPL-3.0-only
+Package license: GPL-2.0-or-later
 
 Summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC, <http://www.nserc-crsng.gc.ca>), the Social Sciences and Humanities Research Council of Canada (SSHRC, <http://www.sshrc-crsh.gc.ca>), and the Shared Hierarchical Academic Research Computing Network (SHARCNET, <http://www.sharcnet.ca>).
 
