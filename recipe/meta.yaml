@@ -1,4 +1,4 @@
-{% set version = "0.70-2" %}
+{% set version = "0.70-3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/np_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/np/np_{{ version }}.tar.gz
-  sha256: 24e0d884afb6ff2cf32c297fe4b0bba0d96a465f7736b10fba562d67cd9db0f0
+  sha256: 1ddf3833078f795bc8a49d543fe14a029deebe43aac5e2d5d286fb0bce1efa90
 
 build:
   number: 0
@@ -35,12 +35,14 @@ requirements:
   host:
     - r-base
     - r-boot
+    - r-crs >=0.15_44
     - r-cubature
     - r-quadprog
     - r-quantreg
   run:
     - r-base
     - r-boot
+    - r-crs >=0.15_44
     - r-cubature
     - r-quadprog
     - r-quantreg
@@ -53,16 +55,9 @@ test:
 about:
   home: https://github.com/JeffreyRacine/R-Package-np
   license: GPL-2.0-or-later
-  summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of
-    continuous, unordered, and ordered factor data types. We would like to gratefully
-    acknowledge support from the Natural Sciences and Engineering Research Council of
-    Canada (NSERC, <https://www.nserc-crsng.gc.ca/>), the Social Sciences and Humanities
-    Research Council of Canada (SSHRC, <https://www.sshrc-crsh.gc.ca/>), and the Shared
-    Hierarchical Academic Research Computing Network (SHARCNET, <https://sharcnet.ca/>).
-    We would also like to acknowledge the contributions of the GNU GSL authors. In particular,
-    we adapt the GNU GSL B-spline routine gsl_bspline.c adding automated support for
-    quantile knots (in addition to uniform knots), providing missing functionality for
-    derivatives, and for extending the splines beyond their endpoints.
+  summary: Nonparametric (and semiparametric) kernel methods that seamlessly handle a mix of continuous, unordered, and ordered factor data types. We would like to gratefully acknowledge support from the Natural Sciences and Engineering Research Council of Canada (NSERC, <https://www.nserc-crsng.gc.ca/>), the Social 
+    Sciences and Humanities Research Council of Canada (SSHRC, <https://www.sshrc-crsh.gc.ca/>), and the Shared Hierarchical Academic Research Computing Network (SHARCNET, <https://sharcnet.ca/>). We would also like to acknowledge the contributions of the GNU GSL authors. In particular, we adapt the GNU GSL B-spline 
+    routine gsl_bspline.c adding automated support for quantile knots (in addition to uniform knots), providing missing functionality for derivatives, and for extending the splines beyond their endpoints.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
