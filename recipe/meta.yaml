@@ -35,12 +35,14 @@ requirements:
   host:
     - r-base
     - r-boot
+    - r-crs >=0.15_44
     - r-cubature
     - r-quadprog
     - r-quantreg
   run:
     - r-base
     - r-boot
+    - r-crs >=0.15_44
     - r-cubature
     - r-quadprog
     - r-quantreg
