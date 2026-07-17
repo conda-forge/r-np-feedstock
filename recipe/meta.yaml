@@ -1,15 +1,15 @@
-{% set version = "0.70-4" %}
+{% set version = "0.70-5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-np
-  version: "{{ version|replace("-", "_") }}"
+  version: "{{ version|replace('-', '_') }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/np_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/np/np_{{ version }}.tar.gz
-  sha256: a5b98f0184193aedfbdd28a06c9e87433efaa9a26190e3b3756b93b45721d7f9
+  sha256: dc31f4e3f921eab2b60b15ca0d4cc378e24e315b8231658cd6f47ad29a818584
 
 build:
   number: 0
